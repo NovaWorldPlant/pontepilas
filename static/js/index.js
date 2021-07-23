@@ -139,13 +139,13 @@
 	  
 	  
 	  //var x = document.getElementById("myText").value;
-	  if (u=="NIVEL BAJO")
+	  if (u=="NIVEL DE PLANTA 1 BAJO")
 	  {
 	console.log("nivel 1 bajo");	
 	document.getElementById("humedad").innerHTML="planta 1 necesita agua";
 	  }
 	  else 
-		  if (u=="NIVEL NORMAL")
+		  if (u=="NIVEL DE PLANTA 1 NORMAL")
 		  {
 			console.log("nivel 1 normal");
 			document.getElementById("humedad").innerHTML="planta 1 no necesita agua";
