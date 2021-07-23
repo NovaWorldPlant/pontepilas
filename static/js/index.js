@@ -51,7 +51,7 @@
 	function prender2(){	
 	//alert("led off");
 	console.log("Planta 3 encendida");
-	message = new Paho.MQTT.Message("ENCENDER3");
+	message = new Paho.MQTT.Message("ENCENDER33");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
 	document.getElementById("led2").innerHTML="Encendido";
@@ -60,7 +60,7 @@
 	function apagar2(){	
 	//alert("led off");
 	console.log("Planta 3 apagada");
-	message = new Paho.MQTT.Message("APAGAR3");
+	message = new Paho.MQTT.Message("APAGAR33");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
 	document.getElementById("led2").innerHTML="Apagado";
@@ -71,7 +71,7 @@
 	function prender3(){	
 	//alert("led off");
 	console.log("Planta 4 encendida");
-	message = new Paho.MQTT.Message("ENCENDER4");
+	message = new Paho.MQTT.Message("ENCENDER444");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
 	document.getElementById("led3").innerHTML="Encendido";
@@ -80,7 +80,7 @@
 	function apagar3(){	
 	//alert("led off");
 	console.log("Planta 4 apagada");
-	message = new Paho.MQTT.Message("APAGAR4");
+	message = new Paho.MQTT.Message("APAG4");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
 	document.getElementById("led3").innerHTML="Apagado";
