@@ -162,6 +162,30 @@
 			console.log("nivel 2 normal");
 			document.getElementById("humedad1").innerHTML="planta 2 no necesita agua";
 		  }
+	  else 
+		  if (u=="NIVEL BAJO 3")
+		  {
+			console.log("nivel 3 bajo");
+			document.getElementById("humedad2").innerHTML="planta 3 necesita agua";
+		  }
+	  else 
+		  if (u=="NIVEL NORMAL 3")
+		  {
+			console.log("nivel 3 normal");
+			document.getElementById("humedad2").innerHTML="planta 3 no necesita agua";
+		  }
+	  else 
+		  if (u=="NIVEL BAJO 4")
+		  {
+			console.log("nivel 4 bajo");
+			document.getElementById("humedad3").innerHTML="planta 4 necesita agua";
+		  }
+	  else 
+		  if (u=="NIVEL NORMAL 4")
+		  {
+			console.log("nivel 4 normal");
+			document.getElementById("humedad3").innerHTML="planta 4 no necesita agua";
+		  }
 
 
 
