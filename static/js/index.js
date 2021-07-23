@@ -144,12 +144,12 @@
 	console.log("nivel 1 bajo");	
 	document.getElementById("humedad").innerHTML="planta 1 necesita agua";
 	  }
-	  else 
-		  if (u=="NIVEL NORMAL")
-		  {
-			console.log("nivel 1 normal");
-			document.getElementById("humedad").innerHTML="planta 1 no necesita agua";
-		  }
+	  elif (u=="NIVEL NORMAL")
+	  {
+		console.log("nivel 1 normal");
+		document.getElementById("humedad").innerHTML="planta 1 no necesita agua";  
+	  }
+
 
 
 	 
