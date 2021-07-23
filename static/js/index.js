@@ -60,7 +60,7 @@
 	function apagar2(){	
 	//alert("led off");
 	console.log("Planta 3 apagada");
-	message = new Paho.MQTT.Message("APAGAR33");
+	message = new Paho.MQTT.Message("APAGARatexf33");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
 	document.getElementById("led2").innerHTML="Apagado";
