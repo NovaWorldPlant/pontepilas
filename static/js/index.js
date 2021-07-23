@@ -13,6 +13,7 @@
 	message = new Paho.MQTT.Message("ENCENDER");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
+	document.getElementById("led").innerHTML="Encendido";
 	//document.getElementById("sensor").innerHTML="led off";
 }
 	function apagar(){	
@@ -21,6 +22,7 @@
 	message = new Paho.MQTT.Message("APAGAR");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
+	document.getElementById("led").innerHTML="Apagado";
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
@@ -137,16 +139,16 @@
 	  
 	  
 	  //var x = document.getElementById("myText").value;
-	  if (u=="ENCENDER")
+	  if (u=="NIVEL BAJO")
 	  {
-	console.log("Encendido");	
-	document.getElementById("led").innerHTML="Encendido";
+	console.log("nivel 1 bajo");	
+	document.getElementById("humedad").innerHTML="planta 1 necesita agua";
 	  }
 	  else 
-		  if (u=="APAGAR")
+		  if (u=="NIVEL NORMAL")
 		  {
-			console.log("Apagado");
-			document.getElementById("led").innerHTML="Apagado";
+			console.log("nivel 1 normal");
+			document.getElementById("humedad").innerHTML="planta 1 no necesita agua";
 		  }
 
 
