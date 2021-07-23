@@ -106,6 +106,18 @@
 			console.log("Apagado");
 			document.getElementById("led").innerHTML="Apagado";
 		  }
+	  else
+		  if (u=="ENCENDER1")
+		  {
+			console.log("Planta 2 encendida");
+			document.getElementById("led1").innerHTML="Encendido";
+		  }
+	  else
+		  if (u=="APAGAR1")
+		  {
+			console.log("Planta 2 apagada");
+			document.getElementById("led1").innerHTML="Apagado";
+		  }
 
 	 
 	  
