@@ -30,6 +30,7 @@
 	message = new Paho.MQTT.Message("ENCENDER2");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
+	document.getElementById("led1").innerHTML="Encendido";
 	//document.getElementById("sensor").innerHTML="led off";
 }
 	function apagar1(){	
@@ -38,7 +39,9 @@
 	message = new Paho.MQTT.Message("APAGAR2");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
+	document.getElementById("led1").innerHTML="Apagado";
 	//document.getElementById("sensor").innerHTML="led off";
+
 }
 
 
@@ -106,18 +109,7 @@
 			console.log("Apagado");
 			document.getElementById("led").innerHTML="Apagado";
 		  }
-	  else
-		  if (u=="ENCENDER1")
-		  {
-			console.log("Planta 2 encendida");
-			document.getElementById("led1").innerHTML="Encendido";
-		  }
-	  else
-		  if (u=="APAGAR1")
-		  {
-			console.log("Planta 2 apagada");
-			document.getElementById("led1").innerHTML="Apagado";
-		  }
+
 
 	 
 	  
