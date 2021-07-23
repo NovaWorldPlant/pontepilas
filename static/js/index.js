@@ -66,7 +66,25 @@
 
 }
 
+	function prender3(){	
+	//alert("led off");
+	console.log("Planta 4 encendida");
+	message = new Paho.MQTT.Message("ENCENDER4");
+    	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
+    	client.send(message);
+	document.getElementById("led2").innerHTML="Encendido";
+	//document.getElementById("sensor").innerHTML="led off";
+}
+	function apagar3(){	
+	//alert("led off");
+	console.log("Planta 4 apagada");
+	message = new Paho.MQTT.Message("APAGAR4");
+    	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
+    	client.send(message);
+	document.getElementById("led2").innerHTML="Apagado";
+	//document.getElementById("sensor").innerHTML="led off";
 
+}
 
 
 // Create a client instance
