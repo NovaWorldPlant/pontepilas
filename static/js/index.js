@@ -72,7 +72,7 @@
 	message = new Paho.MQTT.Message("ENCENDER4");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
-	document.getElementById("led2").innerHTML="Encendido";
+	document.getElementById("led3").innerHTML="Encendido";
 	//document.getElementById("sensor").innerHTML="led off";
 }
 	function apagar3(){	
@@ -81,7 +81,7 @@
 	message = new Paho.MQTT.Message("APAGAR4");
     	message.destinationName = "israel.freire@espoch.edu.ec/iothc";
     	client.send(message);
-	document.getElementById("led2").innerHTML="Apagado";
+	document.getElementById("led3").innerHTML="Apagado";
 	//document.getElementById("sensor").innerHTML="led off";
 
 }
